@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>实验设计</title>
+		<style>
+		    body {
+		        font-family: Arial, sans-serif;
+		        margin: 0;
+		        padding: 0;
+				font-size: 30px;
+		        background-color: #def0ff;
+		    }
+		    .container {
+		        width: 80%;
+		        margin: auto;
+		        overflow: hidden;
+				
+		    }
+		    header {
+				background: #50b3a2;
+		        color: white;
+		        border-bottom: #4799ab 3px solid;
+		    }
+			
+			
+			header nav {
+			    float: right;
+				padding: 0;
+				margin: 0;
+				color: white;
+			}
+			header a {
+			    color: #ffffff;
+			    text-decoration: none;
+			    font-size: 18px;
+				}
+			header a:hover {
+				color: #ffffff;
+				font-weight: bold;
+				}
+			
+			section{
+				display: block;
+				font-size: 16px;
+				padding:2px;
+				background-color: snow;
+				border-radius: 8px;
+			}
+			section ol{
+				padding-left: 15px;
+				padding-top: 3px;
+				padding-bottom: 3px
+			}
+			section ul{
+				padding-left: 15px;
+				padding-top: 3px;
+				padding-bottom: 3px;
+				
+			}
+			c-header{
+				display: block;
+				font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+				margin-left:5px;
+				padding:10;
+				background-color: antiquewhite;
+				font-size: 25px;
+			}
+			.box {
+			    margin:0;
+			    padding: 10px;
+			    background-color:whitesmoke;
+			    border-left: 5px solid #4f95d2;
+			    border-radius: 8px;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+				}
+				
+			
+		</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+	</head>
+	
+
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header>
+		    <div class="container">
+		        <h1>实验设计</h1>
+
+			</div>
+		</header>
+		
+		
+		
+		<c-header>
+			<div class="box">
+				合成机理
+			<section>
+				DHN即1，8-二羟基萘酚（1,8-dihydroxynaphthalene），作为黑色素合成途径一直是黑色素研究的重点。DHN合成途径起始于非还原型聚酮合酶(non-reducing polyketides synthase, NR-PKS) 合成的萘酚类中间产物。在不同真菌中，DHN生物合成途径的主 要差异来自于这个中间产物的结构。目前已知三种聚酮合成途径：七聚酮途径、六聚酮途径、五 聚酮途径。
+			</section>
+			<section>
+				<img src="合成途径2.png" alt="DHN黑色素合成路径示意图2"></img>
+				<img src="合成途径1.png" alt="DHN黑色素合成路径示意图1"></img>
+			</section>
+			</div>
+		</c-header>
+		
+		
+		<c-header>
+			<div class="box">
+			聚酮合酶基因获取
+		<section>
+			<ul>
+				<li>我们需要高效的聚酮合酶来进行DHN黑色素的生产，根据多份文献，我们最后选择了从罗伯茨绿疆菌中提取聚酮合酶基因</li>
+				<li>张玉洁等人的研究表明，罗伯茨绿僵菌中存在PKS1和PKS2同源蛋白，分别由MrPKS1基因簇和MrPKS2基因簇表达。MrPKS1基因簇的产物结构与已知的七聚酮途径中间产物YWA1 (WATANABE et al., 2000b) 与六聚酮途 径AT4HN (WHEELER et al., 2008) 十分相似。虽然其中不含有类似水解酶THNR和SCD去合作生成DHN，但MrPKS2基因簇中存在THNR和SCD的基因。</li>
+				<li>因此我们选择将MrPKS2基因簇导入底盘</li>
+			</ul>
+		</section>
+		</div>
+		</c-header>	
+		
+		
+		
+		<c-header>
+			<div class="box">
+			底盘选择及其优势
+		<section>
+			<ul>
+				<li>过去对于黑色素合成的研究主要利用曲霉表达系统，我们选择用酿酒酵母 BJ5464-NpgA 异源表达 MrPKS2基因簇。</li>
+				<li>酿酒酵母的遗传背景清楚，遗传操作性强，这使得它成为代谢工程的首选底盘细胞之一。</li>
+				<li>酿酒酵母具有公认的安全性（GRAS）和良好的发酵性能，同时具有强大的耐受性，适合高密度培养，在学术研究和工业发酵中受到了广泛的应用。</li>
+				<li>与原核生物相比，酿酒酵母具有较为完整的翻译后修饰系统和细胞器系统，具有优良的鲁棒性，可以极大地保证异源基因遗传和表达的稳定性。</li>
+			</ul>
+		</section>
+		</div>
+		</c-header>	
+		
+		
+		<c-header>
+			<div class="box">
+			实验步骤
+		<section>
+			<ol>
+				<li>基因组及转录组数据分析：通过NCBI基因组数据库（http://www.ncbi.nih.gov/genome）获取真菌罗伯茨绿僵菌 （Metarhizium robertsii） ARSEF23 基因组数据。</li>
+				<li>菌株的培养。</li>
+				<li>真菌基因组的提取（提取真菌中的RNA，去除gDNA后反转录得cDNA）</li>
+				<li>酿酒酵母BJ5464-NpgA感受态细胞的制备以及转化。</li>
+				<li>酵母异源表达及转化产物分离鉴定(多重液相色谱分离、现代波谱解析)。</li>
+			</ol>
+		</section>
+		</div>
+		</c-header>	
+		
+		
+		<header>
+			<div class="container"><nav>
+				<ul>
+					<li><a href="index.html">返回</li>
+				</ul>
+			</nav></div>
+		</header>
+	</body>
+
+</html>
